@@ -11,11 +11,13 @@ body{
 
 #slider{
   overflow:hidden;
-  width: 60%;
+  width: 50%;
   margin: 40px auto;
 }
 
-#slider #top-slider,
+#slider #numbers,
+#slider #headers,
+#slider #sub-headers,
 #slider #bottom-slider{
   display: flex;
   position: relative;
@@ -25,16 +27,7 @@ body{
   clear:both;
 }
 
-#slider #top-slider{
-  animation: topslider 6s ease-in;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-}
-
-#slider #bottom-slider{
-  animation: topslider 6s ease-in .03s;
-}
-
-#slider #top-slider p{
+#slider #numbers p{
   /* background-color: black; */
   font-weight: 600;
   color: white;
@@ -43,18 +36,23 @@ body{
   height: 30px;
   padding-top: 7px;
   text-align:center;
-  margin: 0 auto 10px auto;
+  margin: 40px auto 10px auto;
 }
 
-#slider #top-slider h3{
+#slider #headers h3{
+  width: 33%;
   font-weight: 800;
   font-size: 50px;
+  text-align: center;
 }
 
-#slider #top-slider .box h5{
+#slider #sub-headers h5{
+  width: 33%;
+  text-align: center;
   font-weight: 600;
   font-size: 25px;
   opacity: .4;
+  margin-bottom: 50px;
   /* animation: topsliderh5 2s ease-out infinite; */
 }
 
@@ -69,17 +67,35 @@ body{
   height: 300px;
 }
 
-.box-4, .box-1 p{
+.box-4, p.one{
   width: 100%;
   background: linear-gradient(90deg, rgba(73,177,137,1) 0%, rgba(147,240,176,1) 53%, rgba(0,212,255,1) 100%);
 }
-.box-5, .box-2 p{
+.box-5, p.two{
   width: 100%;
   background: linear-gradient(90deg, rgba(249,248,47,1) 0%, rgba(240,208,147,1) 28%, rgba(255,10,0,1) 70%);
 }
-.box-6, .box-3 p{
+.box-6, p.three{
   width: 100%;
   background: linear-gradient(90deg, rgba(47,249,239,1) 0%, rgba(147,190,240,1) 46%, rgba(40,0,255,1) 100%);
+}
+
+
+/* initializing animations */
+#slider #sub-headers{
+  animation: topslider 5s ease-in;
+}
+
+#slider #bottom-slider{
+  animation: topslider 5s ease-in .1s;
+}
+
+#slider #numbers{
+  animation: topslider 5s ease-in .07s;
+}
+
+#slider #headers{
+  animation: topslider 5s ease-in .05s;
 }
 
 
