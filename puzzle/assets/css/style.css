@@ -9,19 +9,15 @@ body{
 }
 
 figure.puzzle-figure{
-  position: absolute;
-  margin-top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 70%;
+  margin: 40px auto;
 }
 
-ul.puzzle{
+ul.new-puzzle{
   list-style-type: none;
   background-color: black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 300px;
-  height: 300px;
 }
 
 li.tile{
