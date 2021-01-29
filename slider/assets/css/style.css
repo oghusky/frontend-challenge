@@ -46,9 +46,10 @@ body{
   font-size: 50px;
 }
 
-#slider #top-slider h5{
+#slider #top-slider .box h5{
   font-weight: 600;
   font-size: 25px;
+  /* animation: topsliderh5 2s ease-out infinite; */
 }
 
 
@@ -58,7 +59,22 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 300px;
 }
+
+.box-4{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(73,177,137,1) 0%, rgba(147,240,176,1) 53%, rgba(0,212,255,1) 100%);
+}
+.box-5{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(249,248,47,1) 0%, rgba(240,208,147,1) 28%, rgba(255,10,0,1) 70%);
+}
+.box-6{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(47,249,239,1) 0%, rgba(147,190,240,1) 46%, rgba(40,0,255,1) 100%);
+}
+
 
 /* animations */
 
@@ -79,6 +95,5 @@ body{
     left: -0%;
   }
 }
-
 
 /* end animations */
