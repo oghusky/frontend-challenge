@@ -33,3 +33,7 @@ li.tile{
   box-shadow: inset 10px 10px 5px 6px rgba(0,0,0,.4);
   box-shadow: inset -3px -5px 3px 4px rgba(0,0,0,.6);
 }
+li.tile:hover{
+  cursor: pointer;
+  box-shadow: 0 0 6px 6px rgba(255,255,255, .2);
+}
