@@ -120,3 +120,11 @@ body{
 }
 
 /* end animations */
+
+/* media queries */
+/* 414px */
+@media only screen and (max-width: 414px){
+  #slider{
+    width: 100%;
+  }
+}
