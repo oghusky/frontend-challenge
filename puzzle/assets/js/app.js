@@ -71,6 +71,7 @@ window.addEventListener("load", () => {
           }
           // move down
           if ((parseInt(e.target.style.left.split("px")[0]) === empty[0]) && (parseInt(e.target.style.top.split("px")[0]) + 100 === empty[1])) {
+            this.tileAction(e, empty);
           }
           // move up
           if ((parseInt(e.target.style.left.split("px")[0]) === empty[0]) && (parseInt(e.target.style.top.split("px")[0]) - 100 === empty[1])) {
